@@ -13,10 +13,9 @@
             android:layout_height="wrap_content"
             android:background="@color/blueStatus"
             android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
             app:navigationIcon="?attr/homeAsUpIndicator"
-            app:theme="@style/Theme.AppCompat.NoActionBar">
-
-        </android.support.v7.widget.Toolbar>
+            app:theme="@style/Theme.AppCompat.NoActionBar" />
     </android.support.design.widget.AppBarLayout>
 
 </merge>

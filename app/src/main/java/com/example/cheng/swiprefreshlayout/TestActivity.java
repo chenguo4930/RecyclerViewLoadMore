@@ -124,6 +124,10 @@ public class TestActivity extends AppCompatActivity {
                 }
             }
         });
+        //setHasFixedSize 的作用就是确保尺寸是通过用户输入从而确保RecyclerView的尺寸是一个常数。
+        // RecyclerView 的Item宽或者高不会变。每一个Item添加或者删除都不会变。
+        // 如果你没有设置setHasFixedSized没有设置的代价将会是非常昂贵的。
+        // 因为RecyclerView会需要而外计算每个item的size，
         recyclerView.setHasFixedSize(true);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
